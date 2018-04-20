@@ -1,1 +1,2 @@
-# assistant-supervisor-
+## Информация о проекте
+нету.
