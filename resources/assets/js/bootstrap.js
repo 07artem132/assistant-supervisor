@@ -2,6 +2,11 @@
 window._ = require('lodash');
 window.Popper = require('popper.js').default;
 
+require('@fortawesome/fontawesome');
+require('@fortawesome/fontawesome-free-solid');
+require('@fortawesome/fontawesome-free-regular');
+require('@fortawesome/fontawesome-free-brands');
+
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
  * for JavaScript based Bootstrap features such as modals and tabs. This
