@@ -52,6 +52,26 @@
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                    <a class="dropdown-item" href="{{ route('profile') }}"
+                                       onclick="">
+                                        @lang('basic.profile')
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{ route('ParticipationInEvents') }}"
+                                       onclick="">
+                                        @lang('basic.participation in events')
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{ route('notifications') }}"
+                                       onclick="">
+                                        @lang('basic.notifications')
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{ route('dispatch') }}">
+                                        @lang('basic.create a newsletter')
+                                    </a>
+
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

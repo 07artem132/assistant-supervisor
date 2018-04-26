@@ -17,4 +17,15 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/profile', 'UserController@index')->name('profile');
+
+Route::get('/participation-in-events', 'ParticipationInEventsController@index')->name('ParticipationInEvents');
+
+Route::get('/notifications', 'HomeController@index')->name('notifications');
+Route::get('/bind/telegram', 'TelegramController@bind')->name('TelegramBind');
+
+Route::get('/bind/email', 'EmailNotifiesController@bind')->name('EmailBind');
+Route::get('/bind/email/remove', 'EmailNotifiesController@removeBind')->name('EmailBind');
+
+
+Route::get('/dispatch/new', 'DispatchController@index')->name('dispatch');

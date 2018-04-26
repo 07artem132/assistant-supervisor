@@ -10,7 +10,19 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
+                        <div class="form-group row">
+                            <label for="surname" class="col-md-4 col-form-label text-md-right">@lang('auth.surname')</label>
 
+                            <div class="col-md-6">
+                                <input id="surname" type="text" class="form-control{{ $errors->has('surname') ? ' is-invalid' : '' }}" name="surname" value="{{ old('surname') }}" required autofocus>
+
+                                @if ($errors->has('surname'))
+                                    <span class="invalid-feedback">
+                                        <strong>{{ $errors->first('surname') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">@lang('auth.Name')</label>
 
@@ -20,6 +32,20 @@
                                 @if ($errors->has('name'))
                                     <span class="invalid-feedback">
                                         <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="patronymic" class="col-md-4 col-form-label text-md-right">@lang('auth.patronymic')</label>
+
+                            <div class="col-md-6">
+                                <input id="patronymic" type="text" class="form-control{{ $errors->has('patronymic') ? ' is-invalid' : '' }}" name="patronymic" value="{{ old('patronymic') }}" required autofocus>
+
+                                @if ($errors->has('patronymic'))
+                                    <span class="invalid-feedback">
+                                        <strong>{{ $errors->first('patronymic') }}</strong>
                                     </span>
                                 @endif
                             </div>

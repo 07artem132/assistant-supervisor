@@ -40,6 +40,10 @@
             right: 10px;
             top: 18px;
         }
+        .bottom-center {
+            position: absolute;
+            bottom: 0;
+        }
 
         .content {
             text-align: center;
@@ -85,6 +89,12 @@
             <a href="https://github.com/07artem132/assistant-supervisor">GitHub</a>
         </div>
     </div>
+
+        <footer class="bottom-center">
+            <b style="font-weight: 600;">
+                @version
+            </b>
+        </footer>
 </div>
 </body>
 </html>

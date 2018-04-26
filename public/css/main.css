@@ -5,3 +5,7 @@ table.notify {
 table.notify td {
     width: 159px;
 }
+
+.table thead th {
+    border-top: 0;
+}

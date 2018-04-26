@@ -19,7 +19,6 @@
                                 <td>Канал уведомлений</td>
                                 <td>Статус</td>
                                 <td>Действие</td>
-
                             </tr>
                             </thead>
                             <tbody>
@@ -28,16 +27,32 @@
                                     <i class="fab fa-telegram" style="font-size:3em; color:#15aabf"></i>
                                 </td>
                                 <td>disabled</td>
-                                <td>привязать</td>
+                                <td>
+                                    <button type="button"
+                                            class="btn btn-success btn-sm" onclick="location.href='/bind/telegram'" disabled="disabled">@lang('basic.bind notification channel')</button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
                                     <i class="far fa-envelope" style="font-size:3em; color:#908d8d"></i>
+                                </td>
+                                <td>
+                                    @if ($EmailNotifiesStatus)
+                                        enable
+                                    @else
+                                        disabled
+                                    @endif
+                                </td>
+                                <td>
+                                    @if (!$EmailNotifiesStatus)
+                                    <button type="button"
+                                            class="btn btn-success btn-sm"onclick="location.href='/bind/email'">@lang('basic.bind notification channel')</button>
+                                    @else
+                                        <button type="button"
+                                                class="btn btn-danger btn-sm"onclick="location.href='/bind/email/remove'">@lang('basic.remove a binding notification channel')</button>
+                                    @endif
 
                                 </td>
-                                <td>disabled</td>
-                                <td>привязать</td>
-
                             </tr>
                             <tr>
                                 <td>
@@ -45,17 +60,20 @@
 
                                 </td>
                                 <td>disabled</td>
-                                <td>привязать</td>
-
+                                <td>
+                                    <button type="button"
+                                            class="btn btn-success btn-sm" disabled="disabled">@lang('basic.bind notification channel')</button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
                                     <i class="fab fa-facebook-square" style="font-size:3em; color:#3b5bdb"></i>
-
                                 </td>
                                 <td>disabled</td>
-                                <td>привязать</td>
-
+                                <td>
+                                    <button type="button"
+                                            class="btn btn-success btn-sm" disabled="disabled">@lang('basic.bind notification channel')</button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
@@ -63,8 +81,10 @@
 
                                 </td>
                                 <td>disabled</td>
-                                <td>привязать</td>
-
+                                <td>
+                                    <button type="button"
+                                            class="btn btn-success btn-sm" disabled="disabled">@lang('basic.bind notification channel')</button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
@@ -72,8 +92,10 @@
                                        style="font-size:3em; color:#e8590c"></i>
                                 </td>
                                 <td>disabled</td>
-                                <td>привязать</td>
-
+                                <td>
+                                    <button type="button"
+                                            class="btn btn-success btn-sm" disabled="disabled">@lang('basic.bind notification channel')</button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
@@ -81,10 +103,11 @@
                                        style="font-size:2.5em; color:#5e89b3"></i>
                                 </td>
                                 <td>disabled</td>
-                                <td>привязать</td>
-
+                                <td>
+                                    <button type="button"
+                                            class="btn btn-success btn-sm" disabled="disabled">@lang('basic.bind notification channel')</button>
+                                </td>
                             </tr>
-
                             </tbody>
                         </table>
                         <br/>

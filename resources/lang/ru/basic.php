@@ -7,5 +7,11 @@
  */
 
 return [
-	'Dashboard' => 'Общая информация'
+	'Dashboard'                             => 'Общая информация',
+	'profile'                               => 'Мой профиль',
+	'participation in events'          => 'Сведения об участии',
+	'notifications'                         => 'Настройка уведомлений',
+	'bind notification channel'             => 'Привязать',
+	'remove a binding notification channel' => 'Удалить привязку',
+	'create a newsletter'                   => 'Создать рассылку',
 ];

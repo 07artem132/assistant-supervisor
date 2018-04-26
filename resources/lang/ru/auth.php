@@ -2,8 +2,10 @@
 
 return [
 	'Name'                     => 'Имя',
+	'surname'                  => 'Фамилия',
+	'patronymic'               => 'Отчество',
 	'Register'                 => 'Регистрация',
-	'E-Mail Address'           => 'E-Mail Адрес',
+	'E-Mail Address'           => 'E-Mail',
 	'Password'                 => 'Пароль',
 	'Confirm Password'         => 'Подтвердите Пароль',
 	'Sign Up'                  => 'Зарегистрироваться',
@@ -15,5 +17,5 @@ return [
 	'AUTH'                     => 'Авторизация',
 	'Welcome'                  => 'Добро пожаловать',
 	'Send Password Reset Link' => 'Получить ссылку для востановления пароля',
-	'Login'    => 'Вход',
+	'Login'                    => 'Вход',
 ];
