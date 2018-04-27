@@ -78,8 +78,9 @@ return [
 	|
 	*/
 
-	//'locale' => 'ru',
-	'locale' => 'uk',
+	'locale' => 'ru',
+
+	'locales' => ['ru','en','uk'],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -162,6 +163,7 @@ return [
 		App\Providers\RouteServiceProvider::class,
 
 		Telegram\Bot\Laravel\TelegramServiceProvider::class,
+		Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class,
 
 	],
 
@@ -212,6 +214,9 @@ return [
 		'Validator'    => Illuminate\Support\Facades\Validator::class,
 		'View'         => Illuminate\Support\Facades\View::class,
 		'Telegram'     => Telegram\Bot\Laravel\Facades\Telegram::class,
+		'Activation' => Cartalyst\Sentinel\Laravel\Facades\Activation::class,
+		'Reminder'   => Cartalyst\Sentinel\Laravel\Facades\Reminder::class,
+		'Sentinel'   => Cartalyst\Sentinel\Laravel\Facades\Sentinel::class,
 	],
 
 ];

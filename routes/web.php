@@ -29,3 +29,10 @@ Route::get('/bind/email/remove', 'EmailNotifiesController@removeBind')->name('Em
 
 
 Route::get('/dispatch/new', 'DispatchController@index')->name('dispatch');
+
+Route::get('/setlocale/{locale}', function ($locale) {
+	if (in_array($locale, \Config::get('app.locales'))) {
+		Session::put('locale', $locale);
+	}
+	return redirect()->back();
+});
