@@ -14,7 +14,7 @@ return [
     */
 
     'accepted'             => 'The :attribute must be accepted.',
-    'active_url'           => ':attribute не является допустимым URL-адресом.',
+    'active_url'           => 'Значение поля :attribute не является допустимым URL-адресом.',
     'after'                => 'The :attribute must be a date after :date.',
     'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => 'Значени поля :attribute может содержать только буквы.',
