@@ -2,6 +2,8 @@
 
 return [
     'Name'                     => 'Ім`я',
+    'surname'                  => 'Прізвище',
+    'patronymic'               => 'По батькові',
     'Register'                 => 'Реєстрація',
     'E-Mail Address'           => 'Email',
     'Password'                 => 'Пароль',
