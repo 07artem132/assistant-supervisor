@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class EmailNotifiesController extends Controller {
+
+	public function __construct() {
+		$this->middleware( 'auth' );
+	}
+
 	public static function isEnable(): bool {
 		$result = EmailNotify::where( 'user_id', '=', Auth::id() )->first();
 

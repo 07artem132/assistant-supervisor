@@ -9,12 +9,10 @@
                     <div class="card-body">
                             <form>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Тема рассылки</label>
-                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Тестовая рассылка">
-                                    <small id="emailHelp" class="form-text text-muted">Укажите тему рассылки, она будет использоваться как заголовок</small>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Тема">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleSelect2">Выберите группы для рассылки</label>
+                                    <label for="exampleSelect2">Группы для рассылки</label>
                                     <select multiple class="form-control" id="exampleSelect2">
                                         <option>КН-17д</option>
                                         <option>КН-16д</option>
@@ -24,8 +22,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleTextarea">Текст рассылки</label>
-                                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                                    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Текст рассылки"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Отправить</button>
                             </form>

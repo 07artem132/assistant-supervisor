@@ -11,28 +11,36 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get( '/', function () {
+	return view( 'welcome' );
+} );
 
 Auth::routes();
 
-Route::get('/profile', 'UserController@index')->name('profile');
+Route::get( '/profile', 'UserController@index' )->name( 'profile' );
 
-Route::get('/participation-in-events', 'ParticipationInEventsController@index')->name('ParticipationInEvents');
+Route::get( '/participation-in-events', 'ParticipationInEventsController@index' )->name( 'ParticipationInEvents' );
 
-Route::get('/notifications', 'HomeController@index')->name('notifications');
-Route::get('/bind/telegram', 'TelegramController@bind')->name('TelegramBind');
+Route::get( '/notifications', 'HomeController@index' )->name( 'notifications' );
+Route::get( '/bind/telegram', 'TelegramController@bind' )->name( 'TelegramBind' );
 
-Route::get('/bind/email', 'EmailNotifiesController@bind')->name('EmailBind');
-Route::get('/bind/email/remove', 'EmailNotifiesController@removeBind')->name('EmailBind');
+Route::get( '/bind/email', 'EmailNotifiesController@bind' )->name( 'EmailBind' );
+Route::get( '/bind/email/remove', 'EmailNotifiesController@removeBind' )->name( 'EmailBind' );
 
 
-Route::get('/dispatch/new', 'DispatchController@index')->name('dispatch');
+Route::get( '/dispatch/new', 'DispatchController@index' )->name( 'dispatch' );
 
-Route::get('/setlocale/{locale}', function ($locale) {
-	if (in_array($locale, \Config::get('app.locales'))) {
-		Session::put('locale', $locale);
+Route::get( '/setlocale/{locale}', function ( $locale ) {
+	if ( in_array( $locale, \Config::get( 'app.locales' ) ) ) {
+		Session::put( 'locale', $locale );
 	}
+
 	return redirect()->back();
-});
+} )->name( 'setlocale' );
+
+
+Route::get( '/user/list', 'UserController@List' )->name( 'UserList' );
+
+Route::get( '/students/list', 'StudentsController@list' )->name( 'StudentList' );
+Route::get( '/students/add', 'StudentsController@add' )->name( 'StudentAdd' );
+Route::post( '/students/add', 'StudentsController@store' )->name( 'StudentStore' );

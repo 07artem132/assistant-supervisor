@@ -14,6 +14,8 @@
                             <div class="col-md-6">{{ Auth::user()->name }}</div>
                             <div class="col-md-6">@lang('auth.patronymic')</div>
                             <div class="col-md-6">{{ Auth::user()->patronymic }}</div>
+                            <div class="col-md-6">@lang('auth.phone')</div>
+                            <div class="col-md-6">{{ Auth::user()->phone }}</div>
                             <div class="col-md-6">@lang('auth.E-Mail Address')</div>
                             <div class="col-md-6">{{ Auth::user()->email }}</div>
                         </div>

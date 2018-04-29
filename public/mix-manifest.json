@@ -1,5 +1,11 @@
 {
+    "/js/bootstrap.js": "/js/bootstrap.js",
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
+    "/css/bootstrap.css": "/css/bootstrap.css",
+    "/css/flag-country-icon.css": "/css/flag-country-icon.css",
+    "/css/googlefonts.css": "/css/googlefonts.css",
+    "/js/fortawesome.js": "/js/fortawesome.js",
+    "/js/jquery.js": "/js/jquery.js",
     "/css/main.css": "/css/main.css"
 }

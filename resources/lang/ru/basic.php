@@ -14,4 +14,6 @@ return [
 	'bind notification channel'             => 'Привязать',
 	'remove a binding notification channel' => 'Удалить привязку',
 	'create a newsletter'                   => 'Создать рассылку',
+	'students list'=>'Список студентов',
+	'User list'=>'список пользователей',
 ];

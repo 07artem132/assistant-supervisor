@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'session' => 'cartalyst_sentinel',
+	'session' => 'cartalyst_sentinel',
 
     /*
     |--------------------------------------------------------------------------
@@ -40,7 +40,7 @@ return [
     |
     */
 
-    'cookie' => 'cartalyst_sentinel',
+	'cookie' => 'cartalyst_sentinel',
 
     /*
     |--------------------------------------------------------------------------
@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'users' => [
+	'users' => [
 
         'model' => 'Cartalyst\Sentinel\Users\EloquentUser',
 
@@ -66,7 +66,7 @@ return [
     |
     */
 
-    'roles' => [
+	'roles' => [
 
         'model' => 'Cartalyst\Sentinel\Roles\EloquentRole',
 
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'permissions' => [
+	'permissions' => [
 
         'class' => 'Cartalyst\Sentinel\Permissions\StandardPermissions',
 
@@ -109,7 +109,7 @@ return [
     |
     */
 
-    'persistences' => [
+	'persistences' => [
 
         'model' => 'Cartalyst\Sentinel\Persistences\EloquentPersistence',
 
@@ -131,7 +131,7 @@ return [
     |
     */
 
-    'checkpoints' => [
+	'checkpoints' => [
 
         'throttle',
         'activation',
@@ -150,7 +150,7 @@ return [
     |
     */
 
-    'activations' => [
+	'activations' => [
 
         'model' => 'Cartalyst\Sentinel\Activations\EloquentActivation',
 
@@ -172,7 +172,7 @@ return [
     |
     */
 
-    'reminders' => [
+	'reminders' => [
 
         'model' => 'Cartalyst\Sentinel\Reminders\EloquentReminder',
 
@@ -224,7 +224,7 @@ return [
     |
     */
 
-    'throttling' => [
+	'throttling' => [
 
         'model' => 'Cartalyst\Sentinel\Throttling\EloquentThrottle',
 

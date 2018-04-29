@@ -1,23 +1,14 @@
-
 window._ = require('lodash');
 window.Popper = require('popper.js').default;
 
-require('@fortawesome/fontawesome');
-require('@fortawesome/fontawesome-free-solid');
-require('@fortawesome/fontawesome-free-regular');
-require('@fortawesome/fontawesome-free-brands');
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
  * for JavaScript based Bootstrap features such as modals and tabs. This
  * code may be modified to fit the specific needs of your application.
  */
-
-try {
-    window.$ = window.jQuery = require('jquery');
-
-    require('bootstrap');
-} catch (e) {}
+require('bootstrap');
+require('bootstrap-select');
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests

@@ -6,7 +6,11 @@ use Illuminate\Http\Request;
 
 class ParticipationInEventsController extends Controller
 {
-    function index(){
+	public function __construct() {
+		$this->middleware( 'auth' );
+	}
+
+	function index(){
     	return view('participation_in_events');
     }
 }

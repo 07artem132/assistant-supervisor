@@ -14,7 +14,7 @@
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th>#</th>
+                                <th>№</th>
                                 <th>Название</th>
                                 <th>Тип</th>
                                 <th>Баллы</th>

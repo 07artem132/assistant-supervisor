@@ -164,6 +164,7 @@ return [
 
 		Telegram\Bot\Laravel\TelegramServiceProvider::class,
 		Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class,
+		Riverskies\Laravel\MobileDetect\MobileDetectServiceProvider::class
 
 	],
 
@@ -217,6 +218,8 @@ return [
 		'Activation' => Cartalyst\Sentinel\Laravel\Facades\Activation::class,
 		'Reminder'   => Cartalyst\Sentinel\Laravel\Facades\Reminder::class,
 		'Sentinel'   => Cartalyst\Sentinel\Laravel\Facades\Sentinel::class,
+		'MobileDetect' => Riverskies\Laravel\MobileDetect\Facades\MobileDetect::class
+
 	],
 
 ];

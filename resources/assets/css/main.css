@@ -9,3 +9,7 @@ table.notify td {
 .table thead th {
     border-top: 0;
 }
+
+.language_bar {
+    font-family: initial;
+}
