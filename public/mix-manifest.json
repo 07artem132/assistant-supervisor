@@ -4,8 +4,10 @@
     "/css/app.css": "/css/app.css",
     "/css/bootstrap.css": "/css/bootstrap.css",
     "/css/flag-country-icon.css": "/css/flag-country-icon.css",
+    "/css/bootstrap-select.css": "/css/bootstrap-select.css",
     "/css/googlefonts.css": "/css/googlefonts.css",
     "/js/fortawesome.js": "/js/fortawesome.js",
     "/js/jquery.js": "/js/jquery.js",
+    "/js/language.js": "/js/language.js",
     "/css/main.css": "/css/main.css"
 }

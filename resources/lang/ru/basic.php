@@ -9,11 +9,13 @@
 return [
 	'Dashboard'                             => 'Общая информация',
 	'profile'                               => 'Мой профиль',
-	'participation in events'          => 'Сведения об участии',
+	'participation in events'               => 'Сведения об участии',
 	'notifications'                         => 'Настройка уведомлений',
 	'bind notification channel'             => 'Привязать',
 	'remove a binding notification channel' => 'Удалить привязку',
 	'create a newsletter'                   => 'Создать рассылку',
-	'students list'=>'Список студентов',
-	'User list'=>'список пользователей',
+	'students list'                         => 'Список студентов',
+	'User list'                             => 'список пользователей',
+	'students add'                          => 'Добавить студента',
+	'group'=>'Группа',
 ];

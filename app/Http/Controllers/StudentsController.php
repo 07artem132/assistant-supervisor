@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Students;
 use App\Group;
 use \Illuminate\View\View;
@@ -26,7 +25,7 @@ class StudentsController extends Controller {
 			}
 
 			if ( count( $groups ) > 1 ) {
-				$student['groups'] = (string) implode( ',', $groups );
+				$student['groups'] = (string) implode( ', ', $groups );
 			} else {
 				$student['groups'] = (string) $groups[0];
 			}

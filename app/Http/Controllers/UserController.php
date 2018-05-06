@@ -23,26 +23,39 @@ class UserController extends Controller {
 
 	function List() {
 		$users = User::all()->toArray();
-
 		foreach ( $users as &$user ) {
-			$student = Students::with( 'groups.group' )->surname( $user['surname'] )->name( $user['name'] )->patronymic( $user['patronymic'] )->first();
-			if ( empty( $student ) ) {
+			$groups = Students::with( 'groups.group' )->surname( $user['surname'] )->name( $user['name'] )->patronymic( $user['patronymic'] )->first();
+			$roles  = \Cartalyst\Sentinel\Users\EloquentUser::find( $user['id'] )->roles()->get();
+
+			if ( $roles->isEmpty() ) {
+				$user['roles'] = 'Нет';
+			}
+
+			if ( empty( $groups ) ) {
 				$user['groups'] = 'Нет';
 				continue;
 			}
 
-			foreach ( $student['groups'] as &$group ) {
+			foreach ( $roles as $role ) {
+				$studentRole[] = $role->name;
+			}
+
+			foreach ( $groups['groups'] as &$group ) {
 				$studentGroups[] = $group['group']['name'];
 			}
 
 			if ( count( $studentGroups ) > 1 ) {
-				$user['groups'] = explode( ',', $studentGroups );
+				$user['groups'] = implode( ', ', $studentGroups );
 			} else {
 				$user['groups'] = (string) $studentGroups[0];
 			}
+
+			if ( count( $studentRole ) > 1 ) {
+				$user['roles'] = implode( ', ', $studentRole );
+			} else {
+				$user['roles'] = (string) $studentRole[0];
+			}
 		}
-
 		return view( 'UsersLists', [ 'users' => $users ] );
-
 	}
 }
