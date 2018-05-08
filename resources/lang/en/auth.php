@@ -34,6 +34,8 @@ return [
     'Welcome'                  => 'Welcome',
     'Send Password Reset Link' => 'Send Password Reset Link',
     'Login'                    => 'Login',
+    'phone'                    => 'Phone',
+    'role'                     => 'Role'
 ];
 
 
